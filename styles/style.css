@@ -41,8 +41,15 @@ body {
     border-radius: 15px;
     overflow: hidden;
     width: 325px;
-    /* padding: 20px 45px; */
     padding: 0 0 25px;
+    box-shadow: 0 30px 90px 10px hsla(0deg 0% 0% / 20%);
+}
+
+/* desktop version */
+@media only screen and (min-width: 800px) {
+    .profile-card {
+        width: 350px;
+    }
 }
 
 .profile-card__photo {
@@ -74,7 +81,7 @@ body {
 }
 
 .profile-card__info span:first-child {
-    margin-right: 1rem;
+    margin-right: 0.65rem;
 }
 
 #location {
