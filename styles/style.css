@@ -8,17 +8,19 @@
 
 :root {
     font-size: 15px;
+
     /* primary */
-    --dark-cyan: hsl(185, 75%, 39%);
-    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --background-color: hsl(185, 75%, 39%);
+    --text-color: hsl(229, 23%, 23%);
     --dark-grayish-blue: hsl(227, 10%, 46%);
+   
     /* neutral */
-    --dark-gray: hsl(0, 0%, 59%);
+    --text-light: hsl(0, 0%, 59%);
 }
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
-    background-color: var(--dark-cyan);
+    background-color: var(--background-color);
     /* FIX BACKGROUND ISSUE LATER 
     background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
     background-repeat: no-repeat;
@@ -73,11 +75,12 @@ body {
 
 .profile--bold {
     font-weight: 700;
+    color: var(--text-color);
 }
 
 .profile--light {
     font-weight: 400;
-    color: var(--dark-gray);
+    color: var(--text-light);
 }
 
 .profile-card__info span:first-child {
@@ -88,6 +91,7 @@ body {
     font-size: 0.9rem;
     margin-top: 0.5rem;
 }
+
 /* stats */
 
 hr {
