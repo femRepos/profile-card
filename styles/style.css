@@ -23,8 +23,8 @@ body {
     background-color: var(--background-color);
     background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
     background-repeat: no-repeat;
-    background-size: 200vw;
-    background-position: top left, bottom right;
+    background-size: 175vw;
+    background-position: top -80vw left -120vw, bottom -80vw right -120vw;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -32,12 +32,21 @@ body {
     text-align: center;
 }
 
+@media only screen and (min-width: 450px) {
+    body {
+     background-size: 100vw;
+     background-position: top -50vw left -50vw, bottom -50vw right -50vw;
+    } 
+ }
+
 @media only screen and (min-width: 800px) {
     body {
         background-size: 65vw;
         background-position: top -30vw left -17vw, bottom -40vw right -15vw;
     }
 }
+
+
 
 /* profile-card */
 
