@@ -5,31 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- external fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- local stylesheet -->
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <title>Frontend Mentor | Profile card component</title>
 </head>
 <body>
-  Victor Crest
-  26
-  London
+  <!-- profile card -->
+  <div class="profile-card">
+    <div class="profile-card__background">
+      <img src="./images/bg-pattern-card.svg" alt=""/>
+    </div>
 
-  80K
-  Followers
+    <!-- profile photo -->
+    <div class="profile-card__photo">
+      <img src="./images/image-victor.jpg" alt="profile photo"/>
+    </div>
 
-  803K
-  Likes
+    <!-- about -->
+    <div class="profile-card__info">
+      <div>
+          <span class="profile--bold">Victor Crest</span><span class="profile--light">26</span>        
+      </div>
 
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      <div id="location" class="profile--light">London</div>
+    </div>
+
+    <hr>
+
+    <!-- statitics -->
+    <ul class="stats">
+        <li>
+          <div class="stat--large profile--bold">80K</div>
+          <div class="stats__type stat--small profile--light">Followers</div>
+        </li>
+        <li>
+          <div class="stat--large profile--bold">803k</div>
+          <div class="stats__type stat--small profile--light">Likes</div>
+        </li>
+        <li>
+          <div class="stat--large profile--bold">1.4k</div>
+          <div class="stats__type stat--small profile--light">Photos</div>
+        </li>
+    </ul>
   </div>
 </body>
 </html>
